@@ -48,11 +48,11 @@ Quem tem o Azure AD?
 
 - Licenças de recurso para pagamento conforme o uso. Exemplo: Azure AD B2C
 
-- Tipos de identidade no Azure AD
+### Tipos de identidade no Azure AD
 
-- - Usuário
-  - Entidade de serviço: identidade para um aplicativo
-  - Identidade gerenciada: identidade para aplicativos, em que não há necessidade dos desenvolvedores gerarem credenciais.
+* Usuário
+* Entidade de serviço: identidade para um aplicativo
+* Identidade gerenciada: identidade para aplicativos, em que não há necessidade dos desenvolvedores gerarem credenciais.
 
 #### Tipos de Identidades gerenciadas:
 
@@ -62,11 +62,11 @@ Quem tem o Azure AD?
 
 ![](Img/identidade_gerenciada.png)
 
-- * Dispositivos
+- Dispositivos
+  - Registrados no Azure AD: para cenários de BYOD. Compatível com Windows, Android, iOS e macOS.
+  - Ingressados no Azure AD: normalmente para dispositivos da própria corporação.
+  - Ingressados no Azure AD híbrido: para ingressados tanto no Azure AD, quanto no AD local.
 
-- - - Registrados no Azure AD: para cenários de BYOD. Compatível com Windows, Android, iOS e macOS.
-    - Ingressados no Azure AD: normalmente para dispositivos da própria corporação.
-    - Ingressados no Azure AD híbrido: para ingressados tanto no Azure AD, quanto no AD local.
 
 Por que registrar ou ingressar dispositivos? Para trazermos o SSO aos usuários destes dispositivos. Os ingressados têm os benefícios de SSO para recursos e aplicativos que dependem do AD local.
 
@@ -112,3 +112,43 @@ Temos 3 tipos de autenticação para as identidades híbridas:
 
 ![](Img/federated.png)
 
+## Recursos de autenticação do Azure AD
+
+### Métodos de autenticação disponíveis no Azure AD
+
+* Senhas - forma mais comum de usar, mas há vários problemas por serem uma simples superfície de ataque. Ideal ser acompanhado ou substituido por outras formas mais seguras de autenticação.
+
+![](Img/senha.png) 
+
+* Telefone - compatível com duas formas de autenticação usando o telefone, tanto para autenticação quanto para SSPR (Self-Service Password Reset): 
+  * SMS - pode ser usada como forma primária ou secundária de autenticação.
+  * Verificação por chamada de voz - pode ser usada como forma secundária de autenticação. Não há suporte no Azure AD para esta ser forma primária de autenticação. 
+* OATH (autenticação aberta) são uma forma de gerar códigos de senhas avulsas, são como os tokens de bancos ou aplicativos para celular ou computador, que cadastramos uma conta e constantemente ele gera um código de validação. Há dois tipos de tokens:
+  * Tokens OATH via software: o Azure AD gera a chave secreta ou a semente, para então ser inserida no aplicativo e então o aplicativo gera cada OTP (One-time password).
+  * Tokens OATH via hardware: são como os tokens físicos de bancos, que têm a funcionalidade de gerar TOTP (Time-based One-time password). Normalmente vêm com uma chave secreta ou semente pré-programada e precisamos parametrizar no Azure AD as chaves e outras informações de cada token que a organização usar, antes do usuário final utilizar o mesmo. 
+* Autenticação sem senha - é o cenário ideal para muitas organizações, por ser o caminho mais seguro de autenticação. Dificulta substancialmente a superfície de ataque do invasor. 
+  * Windows Hello for Business - substitui as senhas como forma de autenticação forte de dois fatores. É uma combinação de uma chave ou certificado vinculado a um dispositivo mais o PIN (algo que a pessoa saiba) ou biometria (algo que a pessoa é). Auxilia bastante na segurança pois o invasor precisa ter o dispositivo mais o PIN (ou dispositivo + biometria). Pode ser usada como forma primária de autenticação ou secundária para o MFA (autenticação multifator). 
+  * FIDO2 (Fast Identity Online) - padrão aberto para autenticação sem senha. Para autenticação com uma chave de segurança externa ou chave de plataforma incorporada ao dispositivo. 
+  * [Aplicativo Microsoft Authenticator](https://www.microsoft.com/pt-br/security/mobile-authenticator-app)
+
+### MFA
+
+### SSPR
+
+### Recursos de gerenciamento e proteção de senha
+
+## Recursos de gerenciamento de acesso do Azure AD
+
+### Acesso Condicional
+
+### Benefícios das funções do Azure AD e do RBAC (controle de acesso baseado em função)
+
+## Recursos de governança e proteção de identidade do Azure AD
+
+### Sobre a governança de identidade do Azure AD
+
+### Gerenciamento de direitos e revisões de acesso
+
+### PIM (Privileged Identity Management)
+
+### Azure Identity Protection
