@@ -16,9 +16,9 @@ O primeiro módulo traz os conceitos de segurança, conformidade e identidade e 
 
 * Conceitos de identidade
 
-**Módulo 2 - Funcionalidades do Azure AD, parte do Microsoft Entra**
+[**Módulo 2 - Funcionalidades do Azure AD, parte do Microsoft Entra**](Modulo2/)
 
-* **Serviços e tipos de identidade no Azure AD**
+* Serviços e tipos de identidade no Azure AD
 
 * **Recursos de autenticação do Azure AD**
 
