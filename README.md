@@ -6,7 +6,7 @@ A certificação é um conteúdo apenas teórico, com conceitos de SCI (Seguran�
 
 Este repositório terá apenas um resumão, que usei para estudar e revisar o conteúdo antes do exame. Para o conteúdo completo online e gratuito, clique [aqui](https://learn.microsoft.com/pt-br/certifications/exams/sc-900/).
 
-O primeiro módulo traz os conceitos de segurança, conformidade e identidade e cada módulo seguinte irá abordar separadamente um destes itens separadamente e demonstrar quais ferramentas da Microsoft podemos utilizar para cuidar de cada um na organização. Por exemplo, o módulo 3 irá abordar quais os recursos voltados à segurança da informação, como recursos de proteção contra ameaças, recursos para gerenciarmos a postura de segurança na nuvem, entre outros.    
+O primeiro módulo traz os conceitos de segurança, conformidade e identidade e cada módulo seguinte irá abordar separadamente um destes itens separadamente e demonstrar quais ferramentas da Microsoft podemos utilizar para cuidar de cada um na organização. Por exemplo, o módulo 3 irá abordar quais os recursos voltados à segurança da informação, como recursos de proteção contra ameaças, recursos para gerenciarmos a postura de segurança na nuvem, entre outros. 
 
 ## Conteúdo
 
