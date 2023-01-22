@@ -2,7 +2,7 @@
 
 Olá! Este repositório terá anotações do que estudei para a certificação do SC-900 - Fundamentos de segurança, conformidade e identidade da Microsoft.
 
-A certificação é um conteúdo apenas teórico, com conceitos de SCI (Segurança, Conformidade e Identidade) que são abordados juntos com as ferramentas da Microsoft disponíveis para implantarmos e administrarmos estes conceitos dentro de uma organização. 
+A certificação é um conteúdo apenas teórico, com conceitos de SCI (Segurança, Conformidade e Identidade) que são abordados juntos com as ferramentas da Microsoft disponíveis para implantarmos e administrarmos estes conceitos dentro de uma organização.
 
 Este repositório terá apenas um resumão, que usei para estudar e revisar o conteúdo antes do exame. Para o conteúdo completo online e gratuito, clique [aqui](https://learn.microsoft.com/pt-br/certifications/exams/sc-900/).
 
